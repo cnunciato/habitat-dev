@@ -1,0 +1,6 @@
+.vagrant/
+pkgs/
+pkgs.zip
+pkgs.tar.gz
+scripts/my.env
+config/config_worker.toml
