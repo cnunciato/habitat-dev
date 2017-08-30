@@ -85,8 +85,10 @@ If you just want to _see_ the UI and use it, you can:
   * Uncomment [this line](https://github.com/cnunciato/habitat-support/blob/737c2afa32d4426bdf958c1aa1d4f83a46349aab/scripts/Procfile#L1) and [this line](https://github.com/cnunciato/habitat-support/blob/737c2afa32d4426bdf958c1aa1d4f83a46349aab/Vagrantfile#L15)
   * Stop the running Builder service (Ctrl-C should do it)
   * Exit the VM
-  * Run `vagrant reload`
+  * Run `vagrant reload` to pick up the forwarding of port 3000
   * Follow the instructions above to SSH back into the VM &mdash; only this time, since you've already run `make` and compiled everything, just run `make run` to get the services running again.
+
+In either case, you should be able to browse to the UI at http://localhost:3000/#/sign-in.
 
 ## Stuck?
 
