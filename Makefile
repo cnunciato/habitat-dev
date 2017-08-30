@@ -1,7 +1,16 @@
+build-and-run: clean build run
+
+clean:
+	cd /src && \
+	$(MAKE) clean
+
+build:
+	cd /src && \
+	$(MAKE) build-srv
+
 run:
 	cd /src && \
-	$(MAKE) build-srv && \
-	./support/linux/bin/forego start -f /scripts/Procfile -e /scripts/bldr.env
+	sh -c './support/linux/bin/forego start -f /scripts/Procfile -e /scripts/bldr.env'
 
 load: origins keys upload_all
 
