@@ -50,9 +50,9 @@ cd /support
 make
 ```
 
-This start up the Builder services. It usually takes a bit longer.
+This starts up the Builder services. It usually takes a bit longer.
 
-While that's running, if you haven't already, [download a package archive](http://nunciato-shared-files.s3.amazonaws.com/pkgs.zip) and unpack it into `./pkgs` (on your computer now, not on the VM; this directory is shared into the VM, but you'll want to keep it around between VM provisionings). Vagrant will share the `./pkgs` directory into the VM at `/hab/cache/artifacts`.
+While that's running, if you haven't already, [download a package archive](http://nunciato-shared-files.s3.amazonaws.com/pkgs.zip) and unpack it into `./pkgs` (on your computer, not in the VM; you'll want to keep this directory around between VM instances). Vagrant will share the `./pkgs` directory into the VM at `/hab/cache/artifacts`.
 
 When the `make` logging quiets down, you should have a running cluster. Leave it running, and in another tab, once again, enter the VM, change to `root`, navigate to `/support`, and run `make load`:
 
