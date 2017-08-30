@@ -82,7 +82,7 @@ If you want to _develop_ the UI, it's better to leave this VM running and set up
 
 If you just want to _see_ the UI and use it, you can:
 
-  * Uncomment [this line]() and [this line]()
+  * Uncomment [this line](https://github.com/cnunciato/habitat-support/blob/737c2afa32d4426bdf958c1aa1d4f83a46349aab/scripts/Procfile#L1) and [this line](https://github.com/cnunciato/habitat-support/blob/737c2afa32d4426bdf958c1aa1d4f83a46349aab/Vagrantfile#L15)
   * Stop the running Builder service (Ctrl-C should do it)
   * Exit the VM
   * Run `vagrant reload`
