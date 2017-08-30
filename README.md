@@ -26,14 +26,14 @@ and in your home directory:
         ...
 ```
 
-You'll need all three of these keys, by the way. If you don't see one or more them, you can get download public ones with `hab`:
+You'll need all three of these keys, by the way. If you don't see one or more them, you can download the public ones with `hab`:
 
 ```
 hab origin key download core 20160612031944
 hab origin key download core 20160810182414
 ```
 
-The private key is in 1Password.
+The private/signing key is in 1Password.
 
 Next, make a copy of `scripts/my.env.example` and name it `scripts/my.env`, supplying your GitHub auth token and whatever additional environment variables you'd to have pulled into your environment. Once that file is saved, in the root of this repo (not the `habitat` repo &mdash; this one), run:
 
