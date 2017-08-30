@@ -71,3 +71,23 @@ Once the upload completes (which usually takes quite a bit longer), you should b
 make project
 make job
 ```
+
+There you go.
+
+## How do I run the UI?
+
+It depends!
+
+If you want to _develop_ the UI, it's better to leave this VM running and set up to run the UI locally ([follow the instructions here](https://github.com/habitat-sh/habitat/tree/master/components/builder-web#builder-web) to do that, and you can skip the *Running the Builder API Service* section, since you're already doing that, assuming you've done everything above).
+
+If you just want to _see_ the UI and use it, you can:
+
+  * Uncomment [this line]() and [this line]()
+  * Stop the running Builder service (Ctrl-C should do it)
+  * Exit the VM
+  * Run `vagrant reload`
+  * Follow the instructions above to SSH back into the VM &mdash; only this time, since you've already run `make` and compiled everything, just run `make run` to get the services running again.
+
+## Stuck?
+
+I'm `@cnunciato` in the [Habitat Slack](http://slack.habitat.sh). Hit me up!
