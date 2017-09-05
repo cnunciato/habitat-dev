@@ -1,6 +1,6 @@
 # habitat-support
 
-This is what I've been using in development (on my Mac) with Vagrant and VirtualBox. (This repo sits alongside my `habitat` repo.)
+This is what I use to do Habitat development (on my Mac) with Vagrant and VirtualBox. (This repo sits alongside my `habitat` repo.)
 
 ## To use it...
 
@@ -54,7 +54,15 @@ This starts up the Builder services. It usually takes a bit longer.
 
 While that's running, if you haven't already, [download a package archive](http://nunciato-shared-files.s3.amazonaws.com/pkgs.zip) and unpack it into `./pkgs` (on your computer, not in the VM; you'll want to keep this directory around between VM instances). Vagrant will share the `./pkgs` directory into the VM at `/hab/cache/artifacts`.
 
-When the `make` logging quiets down, you should have a running cluster. Leave it running, and in another tab, once again, enter the VM, change to `root`, navigate to `/support`, and run `make load`:
+When the `make` logging quiets down, you should have a running cluster. Look for the following lines in the recent output:
+
+```
+worker.1    | DEBUG:habitat_builder_worker::heartbeat: heartbeat pulsed
+...
+jobsrv.1    | DEBUG:habitat_builder_jobsrv::server::worker_manager: process_work, no pending jobs
+```
+
+Now, **leave that running**, and in another tab, once again, enter the VM, change to `root`, navigate to `/support`, and run `make load`:
 
 ```
 vagrant ssh
@@ -78,7 +86,7 @@ There you go.
 
 It depends!
 
-If you want to _develop_ the UI, it's better to leave this VM running and set up to run the UI locally ([follow the instructions here](https://github.com/habitat-sh/habitat/tree/master/components/builder-web#builder-web) to do that, and you can skip the *Running the Builder API Service* section, since you're already doing that, assuming you've done everything above).
+If you want to _develop_ the UI, it's better to leave this VM running and set up to run the UI locally ([follow the instructions here](https://github.com/habitat-sh/habitat/tree/master/components/builder-web#builder-web) to do that, and you can skip the **Running the Builder API Service** section, since you're already doing that, assuming you've done everything above).
 
 If you just want to _see_ the UI and use it, you can:
 
