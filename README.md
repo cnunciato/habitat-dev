@@ -1,10 +1,10 @@
 # habitat-support
 
-This is what I use to do Habitat development (on my Mac) with Vagrant and VirtualBox. (This repo sits alongside my `habitat` repo.)
+This project is what I use to do Habitat development on my Mac with Vagrant and VirtualBox. It sits alongside my `habitat` and `core-plans` repos, and its goal is to make it easy to set up and tear down Habitat development environments without having to modify the contents of my `habitat` source tree (like config files, keys, etc.).
 
 ## To use it...
 
-Clone this repository into a directory alongside the `habitat` and `core-plans` repos. (The Vagrantfile assumes the presence of both, as well as the existence of a `~/.hab/cache/keys` directory with some keys in it.)
+Clone this repository into a directory alongside the [`habitat`](https://github.com/habitat-sh/habitat) and [`core-plans`](https://github.com/habitat-sh/core-plans) repos. (The Vagrantfile assumes the presence of both of these projects, as well as the existence of a `~/.hab/cache/keys` directory containing some keys to the `core` origin &mdash; more on this below.)
 
 ```
 /Users/you/where-your-code-lives
