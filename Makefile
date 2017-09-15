@@ -17,7 +17,8 @@ load: origins keys upload_all
 origins:
 	http POST http://localhost:9636/v1/depot/origins \
 		Authorization:Bearer:$(HAB_AUTH_TOKEN) \
-		name=core
+		name=core \
+		default_package_visibility=public
 
 keys:
 	cat /hab/cache/keys/core-20160810182414.pub | \
