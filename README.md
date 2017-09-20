@@ -1,6 +1,6 @@
 # habitat-dev
 
-This project is what I use to do Habitat development on my Mac with Vagrant and VirtualBox. It sits alongside my `habitat` and `core-plans` repos, and its goal is to make it easy to set up and tear down Habitat development environments without having to modify the contents of my `habitat` source tree (like config files, keys, etc.).
+I use this project for Habitat development on my Mac with [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads). It sits alongside my `habitat` and `core-plans` repos, and its goal is to make it easy to set up and tear down Habitat development environments without having to modify the contents of my `habitat` source tree (like config files, keys, etc.).
 
 ## To use it...
 
