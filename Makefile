@@ -2,6 +2,7 @@ build-and-run: clean build run
 
 clean:
 	cd /src && \
+	rm -rf target && \
 	$(MAKE) clean
 
 build:
