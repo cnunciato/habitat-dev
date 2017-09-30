@@ -13,7 +13,10 @@ source /scripts/my.env
 echo "auth_token = '${HAB_AUTH_TOKEN}'
 depot_url = '${HAB_DEPOT_URL}'
 auto_publish = true
+key_dir = '/hab/cache/keys'
 " > /config/config_worker.toml
 
 echo 'source /scripts/env.sh' >> ~/.bashrc
 source ~/.bashrc
+
+hab user key generate bldr

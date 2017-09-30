@@ -3,6 +3,7 @@ build-and-run: clean build run
 clean:
 	cd /src && \
 	rm -rf target && \
+	cargo clean && \
 	$(MAKE) clean
 
 build:

@@ -1,5 +1,6 @@
 [depot]
 builds_enabled = true
+key_dir = "/hab/cache/keys"
 
 [github]
 url = "https://api.github.com"
