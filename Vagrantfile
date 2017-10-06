@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "./config",           "/config"
   config.vm.synced_folder "./scripts",          "/scripts"
   config.vm.synced_folder "../habitat",         "/src"
+  config.vm.synced_folder "./.secrets",         "/src/.secrets"
   config.vm.synced_folder "../core-plans",      "/core-plans"
 
   config.vm.provision "shell", path: "./scripts/provision.sh", privileged: true

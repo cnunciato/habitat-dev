@@ -4,5 +4,5 @@ key_dir = "/hab/cache/keys"
 
 [github]
 url = "https://api.github.com"
-client_id = "0c2f738a7d0bd300de10"
-client_secret = "438223113eeb6e7edf2d2f91a232b72de72b9bdf"
+client_id = "Iv1.732260b62f84db15"
+client_secret = "fc7654ed8c65ccfe014cd339a55e3538f935027a"
