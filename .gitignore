@@ -1,5 +1,5 @@
 .vagrant/
-.secrets/
+*.pem
 pkgs/
 pkgs.zip
 pkgs.tar.gz

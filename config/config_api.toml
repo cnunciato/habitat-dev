@@ -1,8 +1,4 @@
 [depot]
 builds_enabled = true
+non_core_builds_enabled = true
 key_dir = "/hab/cache/keys"
-
-[github]
-url = "https://api.github.com"
-client_id = "Iv1.732260b62f84db15"
-client_secret = "fc7654ed8c65ccfe014cd339a55e3538f935027a"

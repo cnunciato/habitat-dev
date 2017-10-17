@@ -2,8 +2,3 @@
 admin_team = 1995301
 build_worker_teams = [1995301]
 early_access_teams = [1995301]
-
-[github]
-url = "https://api.github.com"
-client_id = "Iv1.732260b62f84db15"
-client_secret = "fc7654ed8c65ccfe014cd339a55e3538f935027a"

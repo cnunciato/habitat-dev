@@ -1,3 +1,5 @@
+# Run these inside the VM, as root, from /support
+
 build-and-run: clean build run
 
 clean:
@@ -38,3 +40,11 @@ project:
 
 job:
 	http POST http://localhost:9636/v1/jobs Authorization:Bearer:$(HAB_AUTH_TOKEN) project_id="core/nginx"
+
+# Run these outside the VM
+
+new_vm:
+	vagrant destroy -f && vagrant up
+
+login:
+	vagrant ssh
