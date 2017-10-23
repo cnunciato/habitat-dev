@@ -5,9 +5,8 @@ cp components/hab/install.sh /tmp/
 sh support/linux/install_dev_0_ubuntu_latest.sh
 sh support/linux/install_dev_9_linux.sh
 . ~/.profile
-make
+make build
 
-apt-get install httpie -y
 source /scripts/my.env
 
 echo "auth_token = '${HAB_AUTH_TOKEN}'

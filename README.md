@@ -41,20 +41,22 @@ Next, make a copy of `scripts/my.env.example` and name it `scripts/my.env`, supp
 vagrant up
 ```
 
-This provisions the development VM and installs a bunch of useful tooling. It usually takes around 10 minutes or so. When it finishes, go into the VM, switch to the `root` user, change to the `/support` directory, and run `make`:
+This provisions the development VM, installs a bunch of useful tooling and compiles all Builder services. It usually takes 10-20 minutes or so.
+
+While that's running, if you haven't already, [download a package archive](http://nunciato-shared-files.s3.amazonaws.com/pkgs.zip) and unpack it into `./pkgs` (on your computer, not in the VM; you'll want to keep this directory around between VM instances). Vagrant will share the `./pkgs` directory into the VM at `/hab/cache/artifacts`.
+
+When the provisioning script finishes, go into the VM, switch to the `root` user, change to the `/support` directory, and run `make run`:
 
 ```
 vagrant ssh
 sudo -i
 cd /support
-make
+make run
 ```
 
-This starts up the Builder services. It usually takes a bit longer.
+This starts up the Builder services. It should take only a minute or two.
 
-While that's running, if you haven't already, [download a package archive](http://nunciato-shared-files.s3.amazonaws.com/pkgs.zip) and unpack it into `./pkgs` (on your computer, not in the VM; you'll want to keep this directory around between VM instances). Vagrant will share the `./pkgs` directory into the VM at `/hab/cache/artifacts`.
-
-When the `make` logging quiets down, you should have a running cluster. Look for the following lines in the recent output:
+When the `make run` logging quiets down, you should have a running cluster. Look for the following lines in the recent output:
 
 ```
 worker.1    | DEBUG:habitat_builder_worker::heartbeat: heartbeat pulsed
