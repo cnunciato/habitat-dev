@@ -19,3 +19,4 @@ echo 'source /scripts/env.sh' >> ~/.bashrc
 source ~/.bashrc
 
 hab user key generate bldr
+source /src/terraform/scripts/worker_bootstrap.sh

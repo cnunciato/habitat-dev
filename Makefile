@@ -33,7 +33,7 @@ keys:
 		Authorization:Bearer:$(HAB_AUTH_TOKEN)
 
 upload_all:
-	./scripts/migrate.sh
+	./scripts/upload.sh
 
 project:
 	echo '{ "origin": "core", "plan_path": "nginx/plan.sh", "github": { "organization": "habitat-sh", "repo": "core-plans" } }' | http POST http://localhost:9636/v1/projects Authorization:Bearer:$(HAB_AUTH_TOKEN) --verify no

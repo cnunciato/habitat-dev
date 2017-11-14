@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-16.10"
+  config.vm.box = "bento/ubuntu-17.04"
 
   config.vm.synced_folder "./",                 "/support"
   config.vm.synced_folder "~/.hab/cache/keys",  "/hab/cache/keys"
