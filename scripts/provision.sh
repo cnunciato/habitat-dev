@@ -10,7 +10,7 @@ make build
 source /scripts/my.env
 
 echo "auth_token = '${HAB_AUTH_TOKEN}'
-bldr_url = '${HAB_DEPOT_URL}'
+bldr_url = '${HAB_BLDR_URL}'
 auto_publish = true
 key_dir = '/hab/cache/keys'
 " > /config/config_worker.toml

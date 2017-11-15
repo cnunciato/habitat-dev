@@ -1,4 +1,5 @@
+key_dir = "/hab/cache/keys"
+
 [archive]
 backend = "local"
 local_dir = "/tmp"
-key_dir = "/hab/cache/keys"

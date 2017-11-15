@@ -1,4 +1,2 @@
 [depot]
-builds_enabled = true
-non_core_builds_enabled = true
 key_dir = "/hab/cache/keys"
