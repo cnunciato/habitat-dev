@@ -33,9 +33,11 @@ hab origin key download core 20160612031944
 hab origin key download core 20160810182414
 ```
 
-The private/signing key is in 1Password.
+The private/signing key is in the Habitat shared vault in 1Password.
 
-Next, make a copy of `scripts/my.env.example` and name it `scripts/my.env`, supplying your GitHub auth token and whatever additional environment variables you'd to have pulled into your environment. Once that file is saved, in the root of this repo (not the `habitat` repo &mdash; this one), run:
+You'll also need to obtain the key file named `habitat-builder-dev.2017-10-02.private-key.pem` from 1Password. Download and copy that file into the `.secrets/` directory (in this project), renaming it as `builder-github-app.pem`.
+
+Finally, make a copy of `scripts/my.env.example` and name it `scripts/my.env`, supplying your GitHub auth token and whatever additional environment variables you'd to have pulled into your environment. Once that file is saved, in the root of this repo (not the `habitat` repo &mdash; this one), run:
 
 ```
 vagrant up
