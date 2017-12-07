@@ -3,7 +3,7 @@ postgres: /src/support/db/start.sh
 api: /src/target/debug/bldr-api start --path /tmp/depot --config /config/config_api.toml
 admin: /src/target/debug/bldr-admin start
 router: /src/target/debug/bldr-router start
-jobsrv: /src/target/debug/bldr-jobsrv start --config /config/config_jobsrv.toml
-sessionsrv: /src/target/debug/bldr-sessionsrv start --config /config/config_sessionsrv.toml
-originsrv: /src/target/debug/bldr-originsrv start
+jobsrv: support/run-server jobsrv /config/config_jobsrv.toml
+sessionsrv: support/run-server sessionsrv /config/config_sessionsrv.toml
+originsrv: support/run-server originsrv
 worker: /src/target/debug/bldr-worker start --config /config/config_worker.toml

@@ -7,6 +7,9 @@ sh support/linux/install_dev_9_linux.sh
 . ~/.profile
 make build
 
+apt-get install ntp -y
+systemctl restart ntp
+
 source /scripts/my.env
 
 echo "auth_token = '${HAB_AUTH_TOKEN}'
